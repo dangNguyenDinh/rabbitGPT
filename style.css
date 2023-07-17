@@ -1,0 +1,240 @@
+html {
+    font-size: 62,5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navigator {
+    float: left;
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(44, 39, 39);
+
+}
+
+#navigator .new-rabbit {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(44, 39, 39);
+    border-color: white;
+    border-style: ridge;
+    margin: .6rem;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    border-radius: .5rem;
+    border-color: white;
+    font-size: 3vh;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#navigator .dark-theme {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(44, 39, 39);
+    border-color: white;
+    border-style: ridge;
+    margin: .6rem;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    border-radius: .5rem;
+    border-color: white;
+    font-size: 3vh;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#navigator .light-theme {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    border-color: black;
+    border-style: ridge;
+    margin: .6rem;
+    text-align: center;
+    line-height: 8vh;
+    height: 8vh;
+    border-radius: .5rem;
+    border-color: white;
+    font-size: 3vh;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#navigator .donate {
+    display: block;
+    color: white;
+    position: fixed;
+    bottom: 3.5rem;
+    font-size: 4vh;
+    margin-bottom: 1rem;
+    width: inherit;
+    border-radius: .7rem;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+#navigator .contact {
+    display: block;
+    color: white;
+    position: fixed;
+    bottom: 1.2rem;
+    font-size: 4vh;
+    width: inherit;
+    border-radius: .7rem;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+#navigator .contact a, #navigator .donate a{
+    color: white;
+    text-decoration: none;
+}
+#navigator .donate:hover, #navigator .contact:hover, #navigator .new-rabbit:hover,#navigator .dark-theme:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+#main {
+    float: left;
+    text-align: center;
+    display: block;
+    position: relative;
+    left: 12vw;
+    top: 18vh;
+    height: 65vh;
+    overflow: auto;
+}
+
+#main .title {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 4vh;
+}
+#main .intro {
+    display: block;
+}
+#main ul {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 15rem; 
+    height: 20rem;
+    padding: 15px;
+}
+#main ul li {
+    background-color: rgb(231, 228, 228);
+    margin: .5rem 0px 0px 0px;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: .5rem;
+    font-size: 15px;
+    height: 3.2rem;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+#main ul li:hover {
+    background-color: #d9d9e3ff;
+}
+#message {
+    float: left;
+    position: fixed;
+    top: 85vh;
+    left: 30vw;  
+    width: 60vw;  
+    box-shadow: 0rem 0rem 1rem rgb(160, 159, 159);
+    border-radius: .5rem;
+    background-color: white;
+}
+
+
+#message input {
+    border-radius: .5rem; 
+    width: 50vw;
+    border-width: 0;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 0 0 0 1rem;
+    outline: none;
+}
+#message button {
+    border-radius: 5px;
+    background-color: white;
+    border-color: white;
+    border-style: none;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+#message button:hover {
+    background-color: rgb(220, 217, 217);
+    cursor: pointer;
+}
+.footer {
+    float: left;
+    position: fixed;
+    top: 95vh;
+    text-align: center;
+    font-size: 1rem;
+    left: 40vw;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: blue;
+}
+.footer a:active{
+    color: blueviolet;
+}
+
+.inputMessage {
+    background-color: rgb(184,191,212);
+    display: block;
+    width: 50vw;
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
+    text-align: left;
+    min-height: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    word-wrap: break-word;
+    color: rgb(40, 33, 23);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.inputMessage div {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    overflow: auto;
+
+
+}
+.outputMessage, .tempOutputMessage{
+    background-color: rgb(89, 98, 125);   
+    overflow: auto;
+    display: block;
+    width: 50vw;
+    border-radius: 5px;
+    box-shadow: 0 0 2px grey;
+    text-align: left;
+    min-height: 2rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
